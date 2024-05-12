@@ -1,12 +1,13 @@
+require('dotenv').config(); // Load environment variables from .env file
+
 const Razorpay = require('razorpay');
 
-apiKey="rzp_test_38hQMu7eEpEdna"
-apiSecret="B9gxo1VSdhbpenEq9gPNH56O"
+const apiKey = process.env.API_KEY;
+const apiSecret = process.env.API_SECRET;
 
 const razorpay = new Razorpay({
     key_id: apiKey,
     key_secret: apiSecret,
-  });
+});
 
-
-  module.exports=razorpay;
+module.exports = razorpay;

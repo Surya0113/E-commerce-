@@ -1,8 +1,10 @@
-const mongoose = require("mongoose")
+require('dotenv').config(); // Load environment variables from .env file
+const mongoose = require("mongoose");
 
-const mongoDbUrl='mongodb+srv://suryapratapyadav19:surya121@cluster0.yrz06cm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
-const connectDb=()=>{
-    return mongoose.connect(mongoDbUrl)
+const mongoDbUrl = process.env.MONGODB_URL;
+
+const connectDb = () => {
+    return mongoose.connect(mongoDbUrl);
 }
 
-module.exports={connectDb}
+module.exports = { connectDb };
