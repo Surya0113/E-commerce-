@@ -81,7 +81,7 @@ export const navigation = {
       },
       {
         id: 'men',
-        name: 'Premeuim Plan',
+        name: 'Premium Plan',
         featured: [
           {
             name: 'Eat Fresh',
@@ -114,7 +114,7 @@ export const navigation = {
           },
           {
             id: 'accessories',
-            name: 'PREMEUIM MEMBER ',
+            name: 'Premium Member ',
             items: [
               // { name: 'Watches', id: '#' },
               { name: 'CLICK HERE TO BUY', id: 'watch' },
